@@ -37,6 +37,10 @@ public class Postagem {
 	@ManyToOne // A classe que eu estou é many, a classe que eu chamo (Postagem) é One
 	@JsonIgnoreProperties("postagem")
 	private Tema tema; // Adicionando o objeto tema completo (id, descricao)
+	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
 
 	public Long getId() {
 		return this.id;
