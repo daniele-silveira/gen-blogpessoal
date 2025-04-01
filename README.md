@@ -5,11 +5,12 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 ---
 ## 🚀 Tecnologias Utilizadas
 **Java 17**  
-**Spring Boot 3.2.4** (Web, Security, Data JPA, Validation)  
-**MySQL 8.0** (Banco de dados relacional)  
-**JWT** (Autenticação stateless)  
-**Maven** (Gerenciamento de dependências)  
-**Insomnia/Postman** (Testes de API)
+**Spring Boot** (Spring Web, Spring Security, Spring Data JPA)  
+**Hibernate** (ORM para banco de dados relacional)  
+**MySQL** (Banco de dados relacional)  
+**Maven** (Gerenciador de dependências)  
+**Insomnia** (Para testar as requisições da API)
+
 ---
 
 ## 📌 Funcionalidades
@@ -21,6 +22,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 ✅ **Validação de Campos**
 
 ---
+
 ## 🗃️ Modelo Relacional
 **Tabela `tb_usuarios`**
 | Campo | Tipo | Restrições |
@@ -48,6 +50,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 | descricao | VARCHAR(255) | NOT NULL, UNIQUE |
 
 ---
+
 ## 🔄 Endpoints Principais
 ### **UsuárioController** (`/usuarios`)
 `POST /cadastrar` - Cria novo usuário (permitAll)  
@@ -82,6 +85,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 ┃   ┣ 📜 application.properties
 ┃   ┗ 📜 data.sql         # Dados iniciais (opcional)
 
+----
 
 ## ⚙️ Configuração
 **application.properties**
@@ -91,9 +95,11 @@ spring.datasource.password=****
 spring.jpa.hibernate.ddl-auto=update 
 spring.mvc.pathmatch.matching-strategy=ANT_PATH_MATCHER
 
+---
 
 ## 📜 Licença
 Código aberto para fins educacionais. Desenvolvido como parte do bootcamp da Generation Brasil.
+--
 
 **Desenvolvido por:** Daniele Silveira 🚀  
 **Última atualização:** Abril 2025
