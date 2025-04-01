@@ -50,17 +50,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 `DELETE /postagens/{id}` - Remove postagem
 
 ## 📂 Estrutura do Projeto
-📦 src 
-┣ 📂 main
-┃ ┣ 📂 java.com.generation.blogpessoal
-┃ ┃ ┣ 📂 config - Configurações de segurança
-┃ ┃ ┣ 📂 controller - Endpoints da API
-┃ ┃ ┣ 📂 model - Entidades JPA
-┃ ┃ ┣ 📂 repository - Interfaces de acesso a dados
-┃ ┃ ┣ 📂 security - Configurações de autenticação
-┃ ┃ ┗ 📜 BlogpessoalApplication.java
-┃ ┗ 📂 resources
-┃ ┃ ┣ 📜 application.properties
+src/ ├── main/ │   ├── java/com/generation/blogpessoal/ │   │   ├── config       # Configurações de segurança │   │   ├── controller   # Endpoints da API │   │   ├── model        # Entidades JPA │   │   ├── repository   # Interfaces de acesso a dados │   │   ├── security     # Configurações de autenticação │   │   └── BlogpessoalApplication.java │   └── resources/ │       └── application.properties
 
 
 ## 📜 Licença
