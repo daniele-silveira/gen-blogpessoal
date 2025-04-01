@@ -88,13 +88,13 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 
 ---
 ## ⚙️ Configuração
+
 **application.properties**
 spring.datasource.url=jdbc:mysql://localhost:3306/db_blogpessoal?createDatabaseIfNotExist=true&serverTimezone=UTC 
-spring.datasource.username=**** 
-spring.datasource.password=****
+spring.datasource.username=senha  
+spring.datasource.password=senha
 spring.jpa.hibernate.ddl-auto=update 
 spring.mvc.pathmatch.matching-strategy=ANT_PATH_MATCHER
-
 
 ---
 ## 📜 Licença
