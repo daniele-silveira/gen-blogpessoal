@@ -2,6 +2,7 @@
 
 Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring Boot**, contendo sistema completo de autenticação e CRUD para postagens, temas e usuários.
 
+---
 ## 🚀 Tecnologias Utilizadas
 **Java 17**  
 **Spring Boot 3.2.4** (Web, Security, Data JPA, Validation)  
@@ -9,6 +10,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 **JWT** (Autenticação stateless)  
 **Maven** (Gerenciamento de dependências)  
 **Insomnia/Postman** (Testes de API)
+---
 
 ## 📌 Funcionalidades
 ✅ **Gestão de Usuários**  
@@ -18,6 +20,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 ✅ **Autenticação JWT**  
 ✅ **Validação de Campos**
 
+---
 ## 🗃️ Modelo Relacional
 **Tabela `tb_usuarios`**
 | Campo | Tipo | Restrições |
@@ -44,6 +47,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 | id | BIGINT | PK, AUTO_INCREMENT |
 | descricao | VARCHAR(255) | NOT NULL, UNIQUE |
 
+---
 ## 🔄 Endpoints Principais
 ### **UsuárioController** (`/usuarios`)
 `POST /cadastrar` - Cria novo usuário (permitAll)  
@@ -62,8 +66,9 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 `PUT /` - Atualiza tema (ROLE_ADMIN)  
 `DELETE /{id}` - Remove tema (ROLE_ADMIN)
 
+---
 ## 📂 Estrutura do Projeto
-
+```
 📦 src
 ┣ 📂 main
 ┃ ┣ 📂 java/com/generation/blogpessoal
@@ -81,8 +86,8 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 ## ⚙️ Configuração
 **application.properties**
 spring.datasource.url=jdbc:mysql://localhost:3306/db_blogpessoal?createDatabaseIfNotExist=true&serverTimezone=UTC 
-spring.datasource.username=root 
-spring.datasource.password=root
+spring.datasource.username=**** 
+spring.datasource.password=****
 spring.jpa.hibernate.ddl-auto=update 
 spring.mvc.pathmatch.matching-strategy=ANT_PATH_MATCHER
 
