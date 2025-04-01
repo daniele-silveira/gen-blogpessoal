@@ -84,6 +84,7 @@ Projeto de uma API REST para gestão de blog pessoal desenvolvida com **Spring B
 ┃ ┗ 📂 resources
 ┃   ┣ 📜 application.properties
 ┃   ┗ 📜 data.sql         # Dados iniciais (opcional)
+ ```
 
 ---
 ## ⚙️ Configuração
@@ -94,11 +95,12 @@ spring.datasource.password=****
 spring.jpa.hibernate.ddl-auto=update 
 spring.mvc.pathmatch.matching-strategy=ANT_PATH_MATCHER
 
+
 ---
 ## 📜 Licença
-Código aberto para fins educacionais. Desenvolvido como parte do bootcamp da Generation Brasil.
-
-**Desenvolvido por:** Daniele Silveira 🚀  
+Este projeto foi desenvolvido como parte de um desafio de aprendizado e não possui fins comerciais.
+ 
+📌 **Desenvolvido por:** Daniele Silveira 🚀
 **Última atualização:** Abril 2025
 
 
